@@ -1,0 +1,22 @@
+@import "scss/colors.scss";
+
+.home_container {
+	background-color: $color-0-0;
+	//margin: 0px;
+	height: calc(100vh - 56px);
+
+	.main_home_row {
+		background-image: url("/img/20200801_113217.jpg");
+		background-repeat: no-repeat;
+		background-position: center 35%;
+		height: 40vh;
+
+		.main_home_text {
+			color: $color-2-4;
+		}
+	}
+
+	.main_header_text {
+		text-align: center;
+	}
+}

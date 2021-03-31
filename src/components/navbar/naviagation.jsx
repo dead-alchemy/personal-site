@@ -7,12 +7,12 @@ const Naviagation = () => {
 		{href: "/", display: "Home"},
 		{href: "/blog", display: "Blog"},
 		{href: "/about", display: "About Me"},
-		{href: "/tools", display: "Tools"},
+		//{href: "/tools", display: "Tools"},
 	];
 	const [activeTab, setActiveTab] = useState(0);
 
 	return (
-		<Navbar bg="light" variant="light" id="mainNav" expand={"sm"}>
+		<Navbar bg="dark" variant="dark" id="mainNav" expand={"sm"}>
 			<Navbar.Brand>D Nicholas</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">

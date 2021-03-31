@@ -7,6 +7,7 @@ import {Nav} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 import {getEntries} from "service/service";
+import "./blog.scss";
 
 class Blog extends Component {
 	state = {entries: []};
@@ -15,11 +16,12 @@ class Blog extends Component {
 		let entries = getEntries();
 		this.setState({entries});
 	}
+
 	render() {
 		let {entries} = this.state;
 		return (
-			<div>
-				<Container>
+			<div className="blog_container">
+				<Container className="pt-3">
 					<Row>
 						<Col md="auto">
 							Welcome to the Blog. Please select a entry you would

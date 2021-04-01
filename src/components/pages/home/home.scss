@@ -2,18 +2,20 @@
 
 .home_container {
 	background-color: $color-0-1;
-	//margin: 0px;
+	background: linear-gradient(
+		135deg,
+		$color-0-3 0%,
+		$color-0-2 35%,
+		$color-0-1 100%
+	);
 	height: calc(100vh - 56px);
+	overflow-y: auto;
 
 	.main_home_row {
 		background-image: url("/img/20200801_113217.jpg");
 		background-repeat: no-repeat;
 		background-position: center 35%;
 		height: 40vh;
-
-		.main_home_text {
-			color: $color-2-4;
-		}
 	}
 
 	.main_header_text {

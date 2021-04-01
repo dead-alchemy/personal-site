@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Navbar, Nav} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Naviagation = () => {
 	const tabs = [
@@ -20,8 +20,8 @@ const Naviagation = () => {
 					{tabs.map((t, index) => (
 						<Nav.Item key={index + "nav"}>
 							<Nav.Link
-								active={activeTab === index}
-								as={Link}
+								as={NavLink}
+								exact={t.display === "Blog" ? false : true}
 								to={t.href}
 								onClick={() => setActiveTab(index)}
 							>

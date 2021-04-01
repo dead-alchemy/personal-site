@@ -35,7 +35,7 @@ const HelloPets = () => {
 				src={Oops}
 				alt="Opps the cat"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				Next is Nana. Sweet sweet Nana. I met Nana shortly after I met
@@ -48,7 +48,7 @@ const HelloPets = () => {
 				src={Nana}
 				alt="Nana the goat"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				After Liz and I had moved in together, she lamented that we
@@ -64,7 +64,7 @@ const HelloPets = () => {
 				src={Jack}
 				alt="Jack the panther"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				Next is Millie the bean-wise. Bean-wise is not my own invention,
@@ -78,7 +78,7 @@ const HelloPets = () => {
 				src={Millie}
 				alt="Millie the bean"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				The newest edition to the pack is Chia. This little critter was
@@ -93,7 +93,7 @@ const HelloPets = () => {
 				src={Chia}
 				alt="Chia the seed"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				Finally, we have Ms. Kitty. This sweet girl left us late last
@@ -104,7 +104,7 @@ const HelloPets = () => {
 				src={MsKitty}
 				alt="Ms.Kitty the sassy"
 				className="m-2"
-				style={{width: "80%"}}
+				style={{width: "50%"}}
 			/>
 			<p>
 				I don’t post many pictures on social media, however if a picture

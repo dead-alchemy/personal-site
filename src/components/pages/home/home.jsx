@@ -12,7 +12,7 @@ const Home = () => {
 				<Row className="m-2">
 					<h1>Hello!</h1>
 				</Row>
-				<Row className="main_home_row m-2"></Row>
+				<Row className="main_home_row"></Row>
 				<Row className="m-2">
 					<p>
 						Welcome to my little site. Here is a collection of my

@@ -9,7 +9,6 @@ const Naviagation = () => {
 		{href: "/about", display: "About Me"},
 		//{href: "/tools", display: "Tools"},
 	];
-	const [activeTab, setActiveTab] = useState(0);
 
 	return (
 		<Navbar bg="dark" variant="dark" id="mainNav" expand={"sm"}>
@@ -18,12 +17,11 @@ const Naviagation = () => {
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav>
 					{tabs.map((t, index) => (
-						<Nav.Item key={index + "nav"}>
+						<Nav.Item key={index}>
 							<Nav.Link
 								as={NavLink}
 								exact={t.display === "Blog" ? false : true}
 								to={t.href}
-								onClick={() => setActiveTab(index)}
 							>
 								{t.display}
 							</Nav.Link>

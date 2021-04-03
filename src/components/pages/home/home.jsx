@@ -16,8 +16,7 @@ const Home = () => {
 				<Row className="m-2">
 					<p>
 						Welcome to my little site. Here is a collection of my
-						blog and writings, and a couple of tools I have built in
-						my spare time.
+						blog and writings.
 					</p>
 				</Row>
 			</Container>

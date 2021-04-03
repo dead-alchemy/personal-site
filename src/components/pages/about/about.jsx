@@ -11,7 +11,7 @@ const About = () => {
 					Lake City, Utah. I am engaged to a lovely fiance. I have 3
 					dogs and 2 cats. They are lovely and precious.
 				</p>
-				<p>Things I am proficent my job include</p>
+				<p>Things I am proficent at in my job include</p>
 				<ul>
 					<li>SQL</li>
 					<li>SAS</li>
@@ -20,7 +20,7 @@ const About = () => {
 					<li>React</li>
 					<li>ColdFusion (RIP)</li>
 				</ul>
-				<p>The things I enjoy doing outside of work include</p>
+				<p>The things I enjoy doing outside of work include:</p>
 				<ul>
 					<li>Fishing</li>
 					<li>Playing the accordion</li>

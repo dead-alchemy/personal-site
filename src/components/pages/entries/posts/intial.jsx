@@ -4,7 +4,7 @@ const initial = () => {
 	return (
 		<article>
 			<h1>Hola.</h1>
-			<time itemprop="datePublished" datetime="2021-03-30">
+			<time itemProp="datePublished" dateTime="2021-03-30">
 				March 30th, 2021
 			</time>
 			<p>

@@ -4,7 +4,7 @@ const OutridersImpressions = () => {
 	return (
 		<article>
 			<h1>My Outriders Early Impressions</h1>
-			<time itemprop="datePublished" datetime="2021-04-02">
+			<time itemProp="datePublished" dateTime="2021-04-02">
 				April 2nd, 2021
 			</time>
 			<p>

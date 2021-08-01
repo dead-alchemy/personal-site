@@ -1,8 +1,24 @@
 @import "scss/colors.scss";
 
-.blog_container {
+body {
 	background-color: $color-2-1;
+}
+.blog_container {
 	height: calc(100vh - 56px);
 	overflow-y: auto;
 	line-height: 1.5rem;
+}
+p {
+	text-indent: 2rem;
+}
+
+time {
+	display: block;
+	padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.blog_container {
+		padding: 0 10rem;
+	}
 }

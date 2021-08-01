@@ -10,7 +10,7 @@ const HelloPets = () => {
 	return (
 		<article>
 			<h1>Meet My Pets</h1>
-			<time itemprop="datePublished" datetime="2021-03-31">
+			<time itemProp="datePublished" dateTime="2021-03-31">
 				March 31st, 2021
 			</time>
 			<p>

@@ -2,8 +2,11 @@ import React from "react";
 
 const initial = () => {
 	return (
-		<div>
+		<article>
 			<h1>Hola.</h1>
+			<time itemprop="datePublished" datetime="2021-03-30">
+				March 30th, 2021
+			</time>
 			<p>
 				This little blog post is to just make sure that all the
 				infastrucure I have built is working corretly on this site. It's
@@ -25,7 +28,7 @@ const initial = () => {
 				I am sure I am going to rebuild this at one point, however I
 				would like to have a post today instead of never.
 			</p>
-		</div>
+		</article>
 	);
 };
 

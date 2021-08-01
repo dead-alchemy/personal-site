@@ -2,8 +2,11 @@ import React from "react";
 
 const OutridersImpressions = () => {
 	return (
-		<div>
+		<article>
 			<h1>My Outriders Early Impressions</h1>
+			<time itemprop="datePublished" datetime="2021-04-02">
+				April 2nd, 2021
+			</time>
 			<p>
 				At this point I have sunk in about 6 or 7 hours into Outriders
 				by People Can Fly, not including the time I sunk into the demo.
@@ -82,7 +85,7 @@ const OutridersImpressions = () => {
 				all of your time, and Outriders displays a good palette cleanser
 				on how the genre should play.
 			</p>
-		</div>
+		</article>
 	);
 };
 

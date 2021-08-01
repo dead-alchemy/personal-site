@@ -8,8 +8,11 @@ import MsKitty from "img/pets/20191205_205151.jpg";
 
 const HelloPets = () => {
 	return (
-		<div>
+		<article>
 			<h1>Meet My Pets</h1>
+			<time itemprop="datePublished" datetime="2021-03-31">
+				March 31st, 2021
+			</time>
 			<p>
 				I am super grateful for the pets in my life. I think they are
 				awesome, even if they are assholes sometimes. I never formally
@@ -110,7 +113,7 @@ const HelloPets = () => {
 				I don’t post many pictures on social media, however if a picture
 				is requested of one my furry friends I will be quick to oblige.
 			</p>
-		</div>
+		</article>
 	);
 };
 

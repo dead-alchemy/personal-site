@@ -4,7 +4,7 @@ const OrNotToBe = () => {
 	return (
 		<article>
 			<h1>How can I forget NieR: Automata</h1>
-			<h2>or not to []Be</h2>
+			<h2>or not to [B]e</h2>
 			<time itemProp="datePublished" dateTime="2021-08-01">
 				August 7th, 2021
 			</time>

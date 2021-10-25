@@ -6,6 +6,7 @@ import About from "components/pages/about/about";
 import Blog from "components/pages/blog/blog";
 import Naviagation from "components/navbar/naviagation";
 import Entries from "components/pages/entries/entries";
+import Portfolio from "components/pages/portfolio/portfolio";
 
 const Routes = (props) => {
 	return (
@@ -13,6 +14,7 @@ const Routes = (props) => {
 			<Naviagation />
 			<Route exact path="/" component={Home} />
 			<Route exact path="/about" component={About} />
+			<Route exact path="/portfolio" component={Portfolio} />
 			<Route exact path="/blog/:id" component={Entries} />
 			<Route exact path="/blog/" component={Blog} />
 		</Router>

@@ -7,6 +7,14 @@ body {
 	height: calc(100vh - 56px);
 	overflow-y: auto;
 	line-height: 1.5rem;
+
+	.nav {
+		display: block;
+	}
+
+	.nav-item {
+		display: block;
+	}
 }
 p {
 	text-indent: 2rem;

@@ -29,17 +29,21 @@ class Blog extends Component {
 						</Col>
 						<Col>
 							<Nav>
-								{entries.map((e, i) => (
-									<Nav.Item key={i + "nav"}>
-										<Nav.Link
-											as={Link}
-											to={`/blog/${e.date}`}
-											//onClick={() => setActiveTab(index)}
-										>
-											{e.display}
-										</Nav.Link>
-									</Nav.Item>
-								))}
+								<ul>
+									{entries.map((e, i) => (
+										<li key={i + "nav"}>
+											<Nav.Item>
+												<Nav.Link
+													as={Link}
+													to={`/blog/${e.date}`}
+													//onClick={() => setActiveTab(index)}
+												>
+													{e.display}
+												</Nav.Link>
+											</Nav.Item>
+										</li>
+									))}
+								</ul>
 							</Nav>
 						</Col>
 					</Row>

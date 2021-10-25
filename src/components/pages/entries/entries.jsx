@@ -5,6 +5,7 @@ import HelloPets from "./posts/hello_pets";
 import OutridersImpressions from "./posts/outriders_impressions";
 import FlowersForMAchines from "./posts/flowers_for_machines";
 import OrNotToBe from "./posts/or_not_to_be";
+import MeaninglessCode from "./posts/meaningless_code";
 
 const Entries = (props) => {
 	let {id} = props.match.params;
@@ -20,6 +21,8 @@ const Entries = (props) => {
 				return <FlowersForMAchines />;
 			case "or_not_to_[B]e":
 				return <OrNotToBe />;
+			case "meaningless [C]ode":
+				return <MeaninglessCode />;
 			default:
 				return;
 		}

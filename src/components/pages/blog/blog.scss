@@ -1,12 +1,10 @@
 @import "scss/colors.scss";
 
-body {
-	background-color: $color-2-1;
-}
 .blog_container {
 	height: calc(100vh - 56px);
 	overflow-y: auto;
 	line-height: 1.5rem;
+	background-color: $color-2-1;
 
 	.nav {
 		display: block;

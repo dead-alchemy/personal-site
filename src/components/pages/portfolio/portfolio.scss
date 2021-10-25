@@ -1,14 +1,15 @@
 @import "scss/colors.scss";
 
-body {
-	background-color: $color-3-0;
-}
 .portfolio_container {
 	height: calc(100vh - 56px);
 	overflow-y: auto;
 	line-height: 1.5rem;
-	padding: 2rem;
-	margin: 1rem;
+	padding: 2rem 4rem;
+	background-color: $color-3-0;
+
+	div {
+		margin: 1rem 0rem;
+	}
 }
 
 @media screen and (min-width: 1024px) {

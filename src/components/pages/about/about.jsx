@@ -8,7 +8,7 @@ const About = () => {
 			<Container className="pt-3">
 				<p>
 					I am David Nicholas. I am a full stack developer out of Salt
-					Lake City, Utah. I am engaged to a lovely fiance. I have 3
+					Lake City, Utah. I am engaged to a lovely fiance. I have 2
 					dogs and 2 cats. They are lovely and precious.
 				</p>
 				<p>Things I am proficent at in my job include</p>

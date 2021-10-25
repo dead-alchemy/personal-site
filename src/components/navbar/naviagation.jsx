@@ -7,7 +7,7 @@ const Naviagation = () => {
 		{href: "/", display: "Home"},
 		{href: "/blog", display: "Blog"},
 		{href: "/about", display: "About Me"},
-		//{href: "/tools", display: "Tools"},
+		{href: "/portfolio", display: "Portfolio"},
 	];
 
 	return (

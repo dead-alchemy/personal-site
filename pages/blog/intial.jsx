@@ -9,11 +9,12 @@ const initial = () => {
 			</time>
 			<p>
 				This little blog post is to just make sure that all the
-				infastrucure I have built is working corretly on this site. It's
-				not really much, but it's mine. I was thinking what was the best
-				way to build this but eventually took the easy route. I should
-				have set up an api. I should have made this a stand alone react
-				app. However, for this purpose, simple is fine.
+				infastrucure I have built is working corretly on this site.
+				It&apos;s not really much, but it&apos;s mine. I was thinking
+				what was the best way to build this but eventually took the easy
+				route. I should have set up an api. I should have made this a
+				stand alone react app. However, for this purpose, simple is
+				fine.
 			</p>
 			<p>
 				I have found that even small mistakes while initially creating

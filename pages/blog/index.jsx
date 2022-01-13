@@ -26,7 +26,7 @@ const Home = () => {
 			display: "NieR: Automata Part 3",
 			url: "or_not_to_be",
 		},
-		//{date: "chil[D]hood's end", display: "NieR: Automata Part 4"},
+		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
 		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},
 	];
 
@@ -42,7 +42,7 @@ const Home = () => {
 				</thead>
 				<tbody>
 					{entries.map((e) => (
-						<tr>
+						<tr key={e.display}>
 							<td>
 								<Link href={`/blog/${e.url}`}>
 									<a>{e.display}</a>

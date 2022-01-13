@@ -48,12 +48,12 @@ const HelloPets = () => {
 			<p>
 				After Liz and I had moved in together, she lamented that we
 				needed another pet. More accurately we needed some more cat
-				energy in the house. After all Oops couldn't be the only cat?
-				Boy did the universe deliver. While Liz and I were walking home,
-				this tiny black critter was running up the sidewalk and jumped
-				right into my arms. He quickly grew from a few pounds to 17
-				pounds. Jack is a big boy and can be mean, but overall a sweet
-				boy. Kind of.
+				energy in the house. After all Oops couldn&apos;t be the only
+				cat? Boy did the universe deliver. While Liz and I were walking
+				home, this tiny black critter was running up the sidewalk and
+				jumped right into my arms. He quickly grew from a few pounds to
+				17 pounds. Jack is a big boy and can be mean, but overall a
+				sweet boy. Kind of.
 			</p>
 			<img
 				src="/pictures/pets/396707034.jpg"
@@ -63,10 +63,11 @@ const HelloPets = () => {
 			<p>
 				Next is Millie the bean-wise. Bean-wise is not my own invention,
 				rather the title that was earned and given by her mother,
-				Lizzy's sister. Millie came into my life full time after Lizzy's
-				sister Emily moved in with us. It is a great arrangement and I
-				love this sweet dog. In this dog's life, I am a distant foot
-				note whenever her mom comes into the picture.
+				Lizzy&apos;s sister. Millie came into my life full time after
+				Lizzy&apos;s sister Emily moved in with us. It is a great
+				arrangement and I love this sweet dog. In this dog&apos;s life,
+				I am a distant foot note whenever her mom comes into the
+				picture.
 			</p>
 			<img
 				src="/pictures/pets/IMG_0327.jpg"
@@ -98,8 +99,9 @@ const HelloPets = () => {
 				style={{width: "50%"}}
 			/>
 			<p>
-				I don't post many pictures on social media, however if a picture
-				is requested of one my furry friends I will be quick to oblige.
+				I don&apos;t post many pictures on social media, however if a
+				picture is requested of one my furry friends I will be quick to
+				oblige.
 			</p>
 		</article>
 	);

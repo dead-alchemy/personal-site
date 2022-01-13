@@ -1,0 +1,50 @@
+@import "./colors.scss";
+
+.article {
+	margin-top: 2rem;
+	overflow-y: auto;
+	line-height: 1.5rem;
+	padding: 1rem 2rem;
+	.nav {
+		display: block;
+	}
+
+	.nav-item {
+		display: block;
+	}
+	p {
+		text-indent: 2rem;
+	}
+
+	time {
+		display: block;
+		padding: 1rem 2rem;
+	}
+}
+
+.blog_table {
+	padding-top: 1rem;
+	a {
+		color: $color-1-2;
+
+		&:hover {
+			color: $color-2-2;
+		}
+	}
+
+	td {
+		padding: 0 2rem;
+	}
+
+	tr > td {
+		&:last-child {
+			text-align: right;
+		}
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.article {
+		padding: 1rem 10rem;
+	}
+}

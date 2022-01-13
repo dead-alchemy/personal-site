@@ -1,48 +1,20 @@
 {
-	"name": "my-personal-site",
-	"version": "1.0.0",
-	"private": false,
-	"dependencies": {
-		"@testing-library/jest-dom": "^5.11.5",
-		"@testing-library/react": "^11.1.0",
-		"@testing-library/user-event": "^12.1.10",
-		"bootstrap": "^4.5.3",
-		"lodash-es": "^4.17.15",
-		"react": "^17.0.1",
-		"react-bootstrap": "^1.4.0",
-		"react-dom": "^17.0.1",
-		"react-router-dom": "^5.2.0",
-		"react-scripts": "4.0.0",
-		"sass": "^1.29.0",
-		"web-vitals": "^0.2.4"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": "react-app",
-		"rules": {
-			"no-unused-expressions": "off"
-		}
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"description": "My Personal Website",
-	"main": "index.js",
-	"repository": "https://github.com/dead-alchemy/personal-site",
-	"author": "D. Nicholas",
-	"license": "MIT"
+  "name": "my-website-next",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.47.0"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7"
+  }
 }

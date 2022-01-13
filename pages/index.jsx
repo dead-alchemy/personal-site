@@ -6,6 +6,10 @@ export default function Home() {
 	return (
 		<div className={styles["main"]}>
 			<Head>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Martel&family=Karma&display=swap"
+					rel="stylesheet"
+				/>
 				<title>D. Nicholas</title>
 				<meta
 					name="description"

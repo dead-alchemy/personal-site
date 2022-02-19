@@ -58,6 +58,15 @@ const Nav = () => {
 							<a>About Me</a>
 						</Link>
 					</li>
+					<li
+						className={
+							router.pathname == "/resume" ? styles["active"] : ""
+						}
+					>
+						<Link href="/resume">
+							<a>Resume</a>
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</nav>

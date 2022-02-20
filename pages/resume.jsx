@@ -1,10 +1,17 @@
 import React from "react";
-
+import Head from "next/head";
+import "../styles/globals.scss";
 import styles from "../styles/Resume.module.scss";
 
 const Resume = () => {
 	return (
 		<div className={styles["resume_container"]}>
+			<Head>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Martel&family=Karma&display=swap"
+					rel="stylesheet"
+				/>
+			</Head>
 			<h2>David Nicholas</h2>
 			<div className={styles["contact_container"]}>
 				<h3>

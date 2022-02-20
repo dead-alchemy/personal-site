@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import "../styles/globals.scss";
 import styles from "../styles/Resume.module.scss";
 
 const Resume = () => {

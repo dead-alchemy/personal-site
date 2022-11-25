@@ -2,18 +2,21 @@
 
 .resume_container {
 	padding: 0.5rem;
-	margin: 0 2rem;
+	margin: 0 1rem;
 	text-align: center;
+	h2 {
+		padding-bottom: 0;
+	}
 }
 
 .contact_container {
-	margin: 1rem;
+	margin: 0.5rem;
 	font-size: 0.33rem;
 }
 
 .aboutme_container {
 	text-align: left;
-	margin-bottom: 2rem;
+	margin-bottom: 0.25rem;
 }
 
 .aboutme__details {
@@ -30,17 +33,17 @@
 .education_container {
 	text-align: left;
 	border-top: 2px solid $color-2-3;
-	padding: 2rem;
+	padding: 2rem 0rem;
 }
 
 .education_block {
-	margin-left: 0.5rem;
+	margin-left: 1rem;
 }
 
 .skills_container {
 	text-align: left;
 	border-top: 2px solid $color-2-3;
-	padding: 2rem;
+	padding: 2rem 0rem;
 }
 
 .skills_ul {
@@ -52,7 +55,7 @@
 .experience_container {
 	text-align: left;
 	border-top: 2px solid $color-2-3;
-	padding: 2rem;
+	padding: 2rem 0rem;
 }
 
 .experience__job {

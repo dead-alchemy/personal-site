@@ -8,6 +8,7 @@ const BlogTitle = ({title, subHeading = "", dateTime, humanDate}) => {
 			<time itemProp="datePublished" dateTime={dateTime}>
 				{humanDate}
 			</time>
+			<hr />
 		</Fragment>
 	);
 };

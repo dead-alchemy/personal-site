@@ -85,6 +85,7 @@ const JorgeOrtegaEulogy = () => {
 					className={styles["link"]}
 					href="https://www.legacy.com/us/obituaries/saltlaketribune/name/george-ortega-obituary?id=38489495"
 					target="_blank"
+					rel="noreferrer"
 				>
 					obituary
 				</a>{" "}

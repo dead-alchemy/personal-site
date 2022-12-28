@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
 
@@ -74,6 +76,19 @@ const JorgeOrtegaEulogy = () => {
 				greater man now due to your tutelage. We are all greater now for
 				having you in our lives. Thank you for being an amazing husband,
 				father, grandfather, and friend we could have ever needed.
+			</p>
+			<hr />
+			<br />
+			<p>
+				Here is the{" "}
+				<a
+					className={styles["link"]}
+					href="https://www.legacy.com/us/obituaries/saltlaketribune/name/george-ortega-obituary?id=38489495"
+					target="_blank"
+				>
+					obituary
+				</a>{" "}
+				if you would like to read it.
 			</p>
 		</article>
 	);

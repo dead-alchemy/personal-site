@@ -46,6 +46,14 @@
 	}
 }
 
+.link {
+	color: $color-1-2;
+
+	&:hover {
+		color: $color-2-2;
+	}
+}
+
 @media screen and (min-width: 750px) {
 	.article {
 		padding: 1rem 10rem;

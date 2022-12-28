@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/blog.module.scss";
 
 const Home = () => {
-	let entries = [
+	const entries = [
 		{date: "3/30/2021", display: "Inital Blog Post", url: "intial"},
 		{date: "3/31/2021", display: "Meet My Pets", url: "hello_pets"},
 		{
@@ -25,6 +25,11 @@ const Home = () => {
 			date: "10/24/2021",
 			display: "NieR: Automata Part 3",
 			url: "or_not_to_be",
+		},
+		{
+			date: "12/28/2022",
+			display: "Jorge Ortega's Eulogy",
+			url: "jorge_ortega_eulogy",
 		},
 		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
 		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},

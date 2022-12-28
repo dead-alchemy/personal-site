@@ -5,17 +5,6 @@ import styles from "../styles/Home.module.scss";
 export default function Home() {
 	return (
 		<div className={styles["main"]}>
-			<Head>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Martel&family=Karma&display=swap"
-					rel="stylesheet"
-				/>
-				<title>D. Nicholas</title>
-				<meta
-					name="description"
-					content="The personal website of David Nicholas"
-				/>
-			</Head>
 			<main>
 				<div>
 					<h1>The Personal Site of David Nicholas</h1>

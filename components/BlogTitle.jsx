@@ -1,6 +1,6 @@
 import {Fragment} from "react";
 
-const BlogTitle = ({title, subHeading = false, dateTime, humanDate}) => {
+const BlogTitle = ({title, subHeading = "", dateTime, humanDate}) => {
 	return (
 		<Fragment>
 			<h1>{title}</h1>

@@ -1,12 +1,15 @@
 import styles from "../../styles/blog.module.scss";
+import BlogTitle from "../../components/BlogTitle";
 
 const OutridersImpressions = () => {
 	return (
 		<article className={styles["article"]}>
-			<h1>My Outriders Early Impressions</h1>
-			<time itemProp="datePublished" dateTime="2021-04-02">
-				April 2nd, 2021
-			</time>
+			<BlogTitle
+				title={"My Outriders Early Impressions"}
+				dateTime={"2021-04-02"}
+				humanDate={"April 2nd, 2021"}
+			/>
+
 			<p>
 				At this point I have sunk in about 6 or 7 hours into Outriders
 				by People Can Fly, not including the time I sunk into the demo.

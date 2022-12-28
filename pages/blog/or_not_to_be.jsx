@@ -1,13 +1,15 @@
 import styles from "../../styles/blog.module.scss";
+import BlogTitle from "../../components/BlogTitle";
 
 const OrNotToBe = () => {
 	return (
 		<article className={styles["article"]}>
-			<h1>How can I forget NieR: Automata</h1>
-			<h2>or not to [B]e</h2>
-			<time itemProp="datePublished" dateTime="2021-08-01">
-				August 7th, 2021
-			</time>
+			<BlogTitle
+				title={"How can I forget NieR: Automata"}
+				subHeading={"or not to [B]e"}
+				dateTime={"2021-08-01"}
+				humanDate={"August 7th, 2021"}
+			/>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				Oh 9S. What a tragic hero. Someone who is burdened by endless

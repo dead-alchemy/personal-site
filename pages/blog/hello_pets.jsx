@@ -1,12 +1,14 @@
 import styles from "../../styles/blog.module.scss";
+import BlogTitle from "../../components/BlogTitle";
 
 const HelloPets = () => {
 	return (
 		<article className={styles["article"]}>
-			<h1>Meet My Pets</h1>
-			<time itemProp="datePublished" dateTime="2021-03-31">
-				March 31st, 2021
-			</time>
+			<BlogTitle
+				title={"Meet My Pets"}
+				dateTime={"2021-03-31"}
+				humanDate={"March 31st, 2021"}
+			/>
 			<p>
 				I am super grateful for the pets in my life. I think they are
 				awesome, even if they are assholes sometimes. I never formally

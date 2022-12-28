@@ -1,13 +1,15 @@
 import styles from "../../styles/blog.module.scss";
+import BlogTitle from "../../components/BlogTitle";
 
 const MeaninglessCode = () => {
 	return (
 		<article className={styles["article"]}>
-			<h1>How can I forget NieR: Automata</h1>
-			<h2>flowers for m[A]chines</h2>
-			<time itemProp="datePublished" dateTime="2021-10-24">
-				October 24th, 2021
-			</time>
+			<BlogTitle
+				title={"How can I forget NieR: Automata"}
+				subHeading={"flowers for m[A]chines"}
+				dateTime={"2021-10-24"}
+				humanDate={"October 24th, 2021"}
+			/>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				A2’s journey is one of grief and loss. When we are first

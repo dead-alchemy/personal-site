@@ -1,13 +1,15 @@
 import styles from "../../styles/blog.module.scss";
+import BlogTitle from "../../components/BlogTitle";
 
 const FlowersForMAchines = () => {
 	return (
 		<article className={styles["article"]}>
-			<h1>How can I forget NieR: Automata</h1>
-			<h2>flowers for m[A]chines</h2>
-			<time itemProp="datePublished" dateTime="2021-08-01">
-				August 1st, 2021
-			</time>
+			<BlogTitle
+				title={"How can I forget NieR: Automata"}
+				subHeading={"flowers for m[A]chines"}
+				dateTime={"2021-08-01"}
+				humanDate={"August 1st, 2021"}
+			/>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				I recently ended my playthrough of NieR Replicant

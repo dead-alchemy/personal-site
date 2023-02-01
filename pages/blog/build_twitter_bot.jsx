@@ -3,6 +3,9 @@ import BlogTitle from "../../components/BlogTitle";
 import Code from "../../components/Code";
 import Image from "next/image";
 
+// @todo
+// https://morioh.com/p/bbbce90d65c5 for cloudflare worker for our remote images.
+
 const BuildTwitterBot = () => {
 	return (
 		<article className={styles["article"]}>
@@ -61,7 +64,7 @@ const BuildTwitterBot = () => {
 				to begin your twitter journey!
 			</p>
 
-			<Image
+			{/* <Image
 				src="https://i.imgur.com/inr1oSm.jpg"
 				width={448}
 				height={141}
@@ -75,7 +78,7 @@ const BuildTwitterBot = () => {
 				width={700}
 				height={703}
 				alt={"The app sign up form."}
-			/>
+			/> */}
 
 			<p>
 				Please ignore all keys that are generated for you at this time.
@@ -103,14 +106,14 @@ const BuildTwitterBot = () => {
 				URL. Save these changes.
 			</p>
 
-			<Image
+			{/* <Image
 				src="https://i.imgur.com/kMwqb0d.jpg"
 				width={400}
 				height={249}
 				alt={
 					"App permissions card. It is critical that this is updated if you want to create tweets to twitter."
 				}
-			/>
+			/> */}
 
 			<p>
 				Next up, key generation. Head back to your dashboard, and hit

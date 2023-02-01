@@ -3,7 +3,7 @@ module.exports = {
 	experimental: {
 		runtime: "edge",
 	},
-	images: {
-		domains: ["i.imgur.com"],
-	},
+	// images: {
+	// 	domains: ["i.imgur.com"],
+	// },
 };

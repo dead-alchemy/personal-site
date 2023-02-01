@@ -1,7 +1,6 @@
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
 import Code from "../../components/Code";
-import Image from "next/image";
 
 // @todo
 // https://morioh.com/p/bbbce90d65c5 for cloudflare worker for our remote images.
@@ -64,22 +63,6 @@ const BuildTwitterBot = () => {
 				to begin your twitter journey!
 			</p>
 
-			{/* <Image
-				src="https://i.imgur.com/inr1oSm.jpg"
-				width={448}
-				height={141}
-				alt={
-					"The twitter header with profile picture and developer portal"
-				}
-			/>
-
-			<Image
-				src="https://i.imgur.com/b6XFoMc.jpg"
-				width={700}
-				height={703}
-				alt={"The app sign up form."}
-			/> */}
-
 			<p>
 				Please ignore all keys that are generated for you at this time.
 				We are going to need to reissue them with updated permissions in
@@ -105,15 +88,6 @@ const BuildTwitterBot = () => {
 				Redirect URL information, and a personal site for your Website
 				URL. Save these changes.
 			</p>
-
-			{/* <Image
-				src="https://i.imgur.com/kMwqb0d.jpg"
-				width={400}
-				height={249}
-				alt={
-					"App permissions card. It is critical that this is updated if you want to create tweets to twitter."
-				}
-			/> */}
 
 			<p>
 				Next up, key generation. Head back to your dashboard, and hit

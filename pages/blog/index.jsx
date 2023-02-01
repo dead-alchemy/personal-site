@@ -31,6 +31,11 @@ const Home = () => {
 			display: "Jorge Ortega's Eulogy",
 			url: "jorge_ortega_eulogy",
 		},
+		{
+			date: "1/31/2023",
+			display: "How to Build a Twitter Bot",
+			url: "build_twitter_bot",
+		},
 		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
 		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},
 	];

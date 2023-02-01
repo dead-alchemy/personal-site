@@ -65,12 +65,16 @@ const BuildTwitterBot = () => {
 				src="https://i.imgur.com/inr1oSm.jpg"
 				width={448}
 				height={141}
+				alt={
+					"The twitter header with profile picture and developer portal"
+				}
 			/>
 
 			<Image
 				src="https://i.imgur.com/b6XFoMc.jpg"
 				width={700}
 				height={703}
+				alt={"The app sign up form."}
 			/>
 
 			<p>
@@ -103,6 +107,9 @@ const BuildTwitterBot = () => {
 				src="https://i.imgur.com/kMwqb0d.jpg"
 				width={400}
 				height={249}
+				alt={
+					"App permissions card. It is critical that this is updated if you want to create tweets to twitter."
+				}
 			/>
 
 			<p>
@@ -141,7 +148,8 @@ const BuildTwitterBot = () => {
 				from the corresponding package, pass our keys into that, and
 				export it. Bare bones the file will look like this:
 				<Code>
-					const &#123;TwitterApi&#125; = require("twitter-api-v2");{" "}
+					const &#123;TwitterApi&#125; =
+					require(&quot;twitter-api-v2&quot;);
 					<br />
 					const client = new TwitterApi(
 					<br />
@@ -174,7 +182,9 @@ const BuildTwitterBot = () => {
 			<p>
 				Now in your functions, all you need is to import your new
 				twitterClient, and then use your function to post!
-				<Code>await twitterClient.v2.tweet("Hello World");</Code>
+				<Code>
+					await twitterClient.v2.tweet(&quot;Hello World&quot;);
+				</Code>
 			</p>
 
 			<p>Go forth and use this knowledge for good.</p>

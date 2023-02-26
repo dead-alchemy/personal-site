@@ -28,6 +28,18 @@ const Nav = () => {
 					name="description"
 					content="The personal website of David Nicholas"
 				/>
+				<meta property="og:title" content="David Nicholas"></meta>
+				<meta property="og:type" content="website"></meta>
+				<meta
+					property="og:url"
+					content="https://www.dnicholas.me"
+				></meta>
+				<meta property="og:site_name" content="David Nicholas"></meta>
+				<meta property="og:locale" content="en_US"></meta>
+				<link rel="canonical" href="https://www.dnicholas.me"></link>
+				<meta name="msapplication-starturl" content="/"></meta>
+				<meta name="theme-color" content="#f2efeaff"></meta>
+				<meta name="msapplication-TileColor" content="#f2efeaff"></meta>
 			</Head>
 			<nav className={styles["nav__main"]}>
 				<div className={styles["nav__header"]}>D. Nicholas</div>

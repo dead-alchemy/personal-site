@@ -46,59 +46,7 @@ const Nav = () => {
 				<div className={styles["cheveron"]} onClick={buttonClick}>
 					<img src="/icons/menu.svg" alt="Menu" />
 				</div>
-				<div
-					className={`${styles["nav__options"]} ${
-						!displayMenu
-							? styles["display__true"]
-							: styles["display__none"]
-					}`}
-				>
-					<ul>
-						<li
-							className={
-								router.pathname == "/" ? styles["active"] : ""
-							}
-						>
-							<Link href="/">
-								<a>Home</a>
-							</Link>
-						</li>
-						<li
-							className={
-								router.pathname == "/blog"
-									? styles["active"]
-									: ""
-							}
-						>
-							<Link href="/blog">
-								<a>Blog</a>
-							</Link>
-						</li>
-						<li
-							className={
-								router.pathname == "/aboutme"
-									? styles["active"]
-									: ""
-							}
-						>
-							<Link href="/aboutme">
-								<a>About Me</a>
-							</Link>
-						</li>
-						<li
-							className={
-								router.pathname == "/resume"
-									? styles["active"]
-									: ""
-							}
-						>
-							<Link href="/resume">
-								<a>Resume</a>
-							</Link>
-						</li>
-					</ul>
-				</div>
-				<div className={styles["nav__options2"]}>
+				<div className={`${styles["nav__options"]}`}>
 					<ul>
 						<li
 							className={

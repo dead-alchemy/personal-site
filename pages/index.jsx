@@ -15,7 +15,7 @@ export default function Home() {
 					</h3>
 					<p>
 						I am a web developer out of Salt Lake City that
-						specializes in React, API's, Tableau, and what ever
+						specializes in React, API’s, Tableau, and what ever
 						other full stack problems come my way.
 					</p>
 					<p>

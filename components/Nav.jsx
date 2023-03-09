@@ -19,11 +19,7 @@ const Nav = () => {
 	return (
 		<Fragment>
 			<Head>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&family=Martel&family=Karma&display=swap"
-					rel="stylesheet"
-				/>
-				<title>D. Nicholas</title>
+				<title>David Nicholas</title>
 				<meta
 					name="description"
 					content="The personal website of David Nicholas"
@@ -42,10 +38,7 @@ const Nav = () => {
 				<meta name="msapplication-TileColor" content="#f2efeaff"></meta>
 			</Head>
 			<nav className={styles["nav__main"]}>
-				<div className={styles["nav__header"]}>D. Nicholas</div>
-				<div className={styles["cheveron"]} onClick={buttonClick}>
-					<img src="/icons/menu.svg" alt="Menu" />
-				</div>
+				<div className={styles["nav__header"]}>D Nicholas</div>
 				<div className={`${styles["nav__options"]}`}>
 					<ul>
 						<li

@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 .article {
-	margin-top: 2rem;
+	//margin-top: 2rem;
 	overflow-y: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -24,7 +24,6 @@
 	p {
 		text-indent: 2rem;
 		line-height: 2.5rem;
-		padding-bottom: 1rem;
 	}
 
 	time {
@@ -33,14 +32,19 @@
 	}
 }
 
+.blog_link {
+	color: $color-1-2;
+
+	&:hover {
+		color: $color-3-2;
+	}
+}
+
 .blog_table {
 	padding-top: 1rem;
-	a {
-		color: $color-1-2;
 
-		&:hover {
-			color: $color-2-2;
-		}
+	thead {
+		text-decoration: underline;
 	}
 
 	td {
@@ -56,7 +60,7 @@
 
 .link {
 	color: $color-1-2;
-
+	font-weight: 600;
 	&:hover {
 		color: $color-2-2;
 	}

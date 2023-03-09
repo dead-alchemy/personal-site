@@ -4,27 +4,12 @@ import styles from "../../styles/blog.module.scss";
 
 const Home = () => {
 	const entries = [
-		{date: "3/30/2021", display: "Inital Blog Post", url: "intial"},
-		{date: "3/31/2021", display: "Meet My Pets", url: "hello_pets"},
 		{
-			date: "4/2/2021",
-			display: "Outriders Early Impressions",
-			url: "outriders_impressions",
-		},
-		{
-			date: "8/1/2021",
-			display: "NieR: Automata Part 1",
-			url: "flowers_for_machines",
-		},
-		{
-			date: "8/7/2021",
-			display: "NieR: Automata Part 2",
-			url: "meaningless_code",
-		},
-		{
-			date: "10/24/2021",
-			display: "NieR: Automata Part 3",
-			url: "or_not_to_be",
+			date: "1/31/2023",
+			display: "How to Build a Twitter Bot",
+			description:
+				"This is how to build a twitter bot using Node.JS and Netlify.",
+			url: "build_twitter_bot",
 		},
 		{
 			date: "12/28/2022",
@@ -32,17 +17,42 @@ const Home = () => {
 			url: "jorge_ortega_eulogy",
 		},
 		{
-			date: "1/31/2023",
-			display: "How to Build a Twitter Bot",
-			url: "build_twitter_bot",
+			date: "10/24/2021",
+			display: "NieR: Automata Part 3",
+			url: "or_not_to_be",
 		},
+		{
+			date: "8/7/2021",
+			display: "NieR: Automata Part 2",
+			url: "meaningless_code",
+		},
+		{
+			date: "8/1/2021",
+			display: "NieR: Automata Part 1",
+			url: "flowers_for_machines",
+		},
+		{
+			date: "4/2/2021",
+			display: "Outriders Early Impressions",
+			url: "outriders_impressions",
+		},
+		{date: "3/31/2021", display: "Meet My Pets", url: "hello_pets"},
+		{date: "3/30/2021", display: "Inital Blog Post", url: "intial"},
 		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
 		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},
 	];
 
 	return (
 		<div className={styles["article"]}>
-			<div>Hi. These are my blog posts</div>
+			<div>
+				My Most Recent Blog is{" "}
+				<Link href={`/blog/${entries[0].url}`}>
+					<a className={styles["blog_link"]}>{entries[0].display}</a>
+				</Link>
+				<br />
+				{entries[0].description}
+			</div>
+
 			<table className={styles["blog_table"]}>
 				<thead>
 					<tr>
@@ -55,7 +65,9 @@ const Home = () => {
 						<tr key={e.display}>
 							<td>
 								<Link href={`/blog/${e.url}`}>
-									<a>{e.display}</a>
+									<a className={styles["blog_link"]}>
+										{e.display}
+									</a>
 								</Link>
 							</td>
 							<td>{e.date}</td>

@@ -5,8 +5,8 @@ const AboutMe = () => {
 		<div className={styles["about_container"]}>
 			<p>
 				I am David Nicholas. I am a full stack developer out of Salt
-				Lake City, Utah. I am engaged to a lovely fiance. I have 2 dogs
-				and 2 cats. They are lovely and precious.
+				Lake City, Utah. Married to lovely Liz. I have dogs and 2 cats.
+				They are lovely and precious.
 			</p>
 			<p>Things I am proficent at in my job include</p>
 			<ul>

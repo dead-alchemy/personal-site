@@ -26,24 +26,14 @@ const Resume = () => {
 					<div className={styles["aboutme__mission"]}>
 						A full stack software developer working to ensure people
 						are empowered with data, stability, and choice. Building
-						React application to translate data for users so they
+						React applications to translate data for users so they
 						can make meaningful choices.
 					</div>
 					<div>
-						Often working with various databases, api’s, and library
-						to bring to life trends that are obfusciated by the
-						weight of data.
+						Often working with various databases, api’s, and
+						libraries to bring to life trends that are obfusciated
+						by the weight of data.
 					</div>
-				</div>
-			</div>
-
-			<div className={styles["education_container"]}>
-				<h3>Education</h3>
-				<div className={styles["education_block"]}>
-					<h4>Bachelor of Science in Computer Science</h4>
-					<h5>Wilmington University</h5>
-					<div>2018 - Current</div>
-					<div>In Progress</div>
 				</div>
 			</div>
 
@@ -127,12 +117,21 @@ const Resume = () => {
 				</div>
 			</div>
 
+			<div className={styles["education_container"]}>
+				<h3>Education</h3>
+				<div className={styles["education_block"]}>
+					<h4>Bachelor of Science in Computer Science</h4>
+					<h5>Wilmington University</h5>
+					<div>2018 - Current (Anticipated Graduation 2023) </div>
+					<div>In Progress</div>
+				</div>
+			</div>
 			<div
 				itemProp="datePublished"
 				dateTime="2022-02-19"
 				className={styles["last_updated"]}
 			>
-				Last Updated 2/19/2022
+				Last Updated 3/8/2023
 			</div>
 		</div>
 	);

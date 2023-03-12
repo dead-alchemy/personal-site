@@ -1,14 +1,16 @@
-import styles from "../../styles/blog.module.scss";
-import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const HelloPets = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"Meet My Pets"}
-				dateTime={"2021-03-31"}
-				humanDate={"March 31st, 2021"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "Meet My Pets",
+				description: "All my pets!",
+				dateTime: "2021-03-31",
+				humanDate: "March 31st, 2021",
+				url: "hello_pets",
+			}}
+		>
 			<p>
 				I am super grateful for the pets in my life. I think they are
 				awesome, even if they are assholes sometimes. I never formally
@@ -105,7 +107,7 @@ const HelloPets = () => {
 				picture is requested of one my furry friends I will be quick to
 				oblige.
 			</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

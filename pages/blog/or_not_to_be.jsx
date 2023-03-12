@@ -1,15 +1,19 @@
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const OrNotToBe = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"How can I forget NieR: Automata"}
-				subHeading={"or not to [B]e"}
-				dateTime={"2021-08-01"}
-				humanDate={"August 7th, 2021"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "How can I forget NieR: Automata",
+				subHeading: "or not to [B]e",
+				description: "How can I forget NieR: Automata: Part 2",
+				dateTime: "2021-08-01",
+				humanDate: "August 7th, 2021",
+				url: "or_not_to_be",
+			}}
+		>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				Oh 9S. What a tragic hero. Someone who is burdened by endless
@@ -53,7 +57,7 @@ const OrNotToBe = () => {
 				around him better. Unfortunately, the best parts of his
 				character lead to his downfall, but that we will visit after C.{" "}
 			</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

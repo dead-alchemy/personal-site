@@ -1,13 +1,16 @@
 import {BlogTemplate} from "../../components";
 
-const MagicIsAweseom = () => {
+const MagicIsAweseome = () => {
 	return (
 		<BlogTemplate
 			title={{
 				title: "Magic: My Favorite App",
 				subHeading: "A love Letter to Mobile Magic: The Gathering",
+				description:
+					"An Essay I wrote about my favorite app Magic: Arena",
 				dateTime: "2023-03-11",
 				humanDate: "March 11th, 2023",
+				url: "magic_my_favorite_app",
 			}}
 		>
 			<p>
@@ -93,4 +96,4 @@ const MagicIsAweseom = () => {
 	);
 };
 
-export default MagicIsAweseom;
+export default MagicIsAweseome;

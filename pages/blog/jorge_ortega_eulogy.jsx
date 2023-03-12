@@ -2,16 +2,20 @@ import Link from "next/link";
 
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const JorgeOrtegaEulogy = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"Jorge Ortega's Eulogy"}
-				subHeading={"September 8, 1932 - December 22, 2022"}
-				dateTime={"2022-12-28"}
-				humanDate={"December 28th, 2022"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "Jorge Ortega's Eulogy",
+				subHeading: "September 8, 1932 - December 22, 2022",
+				description: "The Eulogy I Wrote for Jorge Ortega",
+				dateTime: "2022-12-28",
+				humanDate: "December 28th, 2022",
+				url: "jorge_ortega_eulogy",
+			}}
+		>
 			<p>
 				This is the eulogy I wrote for my grandfather and best friend
 				Jorge Ortega. Jorge was born on September 8th, 1932 in Santa
@@ -91,7 +95,7 @@ const JorgeOrtegaEulogy = () => {
 				</a>{" "}
 				if you would like to read it.
 			</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

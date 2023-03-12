@@ -1,15 +1,18 @@
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const OutridersImpressions = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"My Outriders Early Impressions"}
-				dateTime={"2021-04-02"}
-				humanDate={"April 2nd, 2021"}
-			/>
-
+		<BlogTemplate
+			title={{
+				title: "My Outriders Early Impressions",
+				description: "My Early Impressions of Outriders",
+				dateTime: "2021-04-02",
+				humanDate: "April 2nd, 2021",
+				url: "outriders_impressions",
+			}}
+		>
 			<p>
 				At this point I have sunk in about 6 or 7 hours into Outriders
 				by People Can Fly, not including the time I sunk into the demo.
@@ -88,7 +91,7 @@ const OutridersImpressions = () => {
 				all of your time, and Outriders displays a good palette cleanser
 				on how the genre should play.
 			</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

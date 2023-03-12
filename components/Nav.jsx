@@ -38,7 +38,9 @@ const Nav = () => {
 				<meta name="msapplication-TileColor" content="#f2efeaff"></meta>
 			</Head>
 			<nav className={styles["nav__main"]}>
-				<div className={styles["nav__header"]}>D Nicholas</div>
+				<div className={styles["nav__header"]}>
+					<Link href="/">D Nicholas</Link>
+				</div>
 				<div className={`${styles["nav__options"]}`}>
 					<ul>
 						<li

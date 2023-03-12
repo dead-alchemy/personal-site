@@ -24,6 +24,15 @@
 	p {
 		text-indent: 2rem;
 		line-height: 2.5rem;
+
+		a {
+			color: $color-3-2;
+
+			&:hover {
+				color: $color-1-2;
+				text-decoration: underline;
+			}
+		}
 	}
 
 	time {

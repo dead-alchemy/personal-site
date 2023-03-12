@@ -5,6 +5,12 @@ import styles from "../../styles/blog.module.scss";
 const Home = () => {
 	const entries = [
 		{
+			date: "3/11/2023",
+			display: "Magic: My Favorite App",
+			description: "An Essay I wrote about my favorite app Magic: Arena",
+			url: "magic_my_favorite_app",
+		},
+		{
 			date: "1/31/2023",
 			display: "How to Build a Twitter Bot",
 			description:

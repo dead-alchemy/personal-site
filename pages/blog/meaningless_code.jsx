@@ -1,15 +1,19 @@
 import styles from "../../styles/blog.module.scss";
 import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const MeaninglessCode = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"How can I forget NieR: Automata"}
-				subHeading={"flowers for m[A]chines"}
-				dateTime={"2021-10-24"}
-				humanDate={"October 24th, 2021"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "How can I forget NieR: Automata",
+				subHeading: "flowers for m[A]chines",
+				description: "How can I forget NieR: Automata: Part 1",
+				dateTime: "2021-10-24",
+				humanDate: "October 24th, 2021",
+				url: "meaningless_code",
+			}}
+		>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				A2’s journey is one of grief and loss. When we are first
@@ -43,7 +47,7 @@ const MeaninglessCode = () => {
 				join the fate of her friends and fallen team, as well as helping
 				her once enemy in a quest that they could not achieve.{" "}
 			</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

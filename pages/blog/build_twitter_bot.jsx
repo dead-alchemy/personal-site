@@ -1,19 +1,21 @@
-import styles from "../../styles/blog.module.scss";
-import BlogTitle from "../../components/BlogTitle";
 import Code from "../../components/Code";
+import {BlogTemplate} from "../../components";
 
 // @todo
 // https://morioh.com/p/bbbce90d65c5 for cloudflare worker for our remote images.
 
 const BuildTwitterBot = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"How to Build a Twitter Bot"}
-				subHeading={"Save Some Time and Learn from Me."}
-				dateTime={"2023-01-31"}
-				humanDate={"January 31st, 2021"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "How to Build a Twitter Bot",
+				subHeading: "Building a Twitter bot with Node.JS",
+				description: "How to build a Twitter bot with Node.js",
+				dateTime: "2023-01-31",
+				humanDate: "January 31st, 2021",
+				url: "build_twitter_bot",
+			}}
+		>
 			<p>
 				Building a twitter bot looks deceptively easy. It really isn’t
 				hard to do, but there are pitfalls that I landed in that made my
@@ -165,7 +167,7 @@ const BuildTwitterBot = () => {
 			</p>
 
 			<p>Go forth and use this knowledge for good.</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

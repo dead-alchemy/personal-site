@@ -1,15 +1,17 @@
-import styles from "../../styles/blog.module.scss";
-import BlogTitle from "../../components/BlogTitle";
+import {BlogTemplate} from "../../components";
 
 const FlowersForMAchines = () => {
 	return (
-		<article className={styles["article"]}>
-			<BlogTitle
-				title={"How can I forget NieR: Automata"}
-				subHeading={"flowers for m[A]chines"}
-				dateTime={"2021-08-01"}
-				humanDate={"August 1st, 2021"}
-			/>
+		<BlogTemplate
+			title={{
+				title: "How can I forget NieR: Automata",
+				subHeading: "flowers for m[A]chines",
+				description: "My Play Through of NieR: Automata",
+				dateTime: "2021-08-01",
+				humanDate: "August 1st, 2021",
+				url: "flowers_for_machines",
+			}}
+		>
 			<p>*** Spoilers for the Main Campaign of NieR: Automata*** </p>
 			<p>
 				I recently ended my playthrough of NieR Replicant
@@ -95,7 +97,7 @@ const FlowersForMAchines = () => {
 				could be time for 2B and 9S to make their own stories.
 			</p>
 			<p>See you when I beat ending B.</p>
-		</article>
+		</BlogTemplate>
 	);
 };
 

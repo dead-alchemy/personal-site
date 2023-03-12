@@ -43,7 +43,6 @@ const Home = () => {
 			url: "outriders_impressions",
 		},
 		{date: "3/31/2021", display: "Meet My Pets", url: "hello_pets"},
-		{date: "3/30/2021", display: "Inital Blog Post", url: "intial"},
 		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
 		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},
 	];

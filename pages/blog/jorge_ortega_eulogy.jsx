@@ -8,7 +8,7 @@ const JorgeOrtegaEulogy = () => {
 	return (
 		<BlogTemplate
 			title={{
-				title: "Jorge Ortega's Eulogy",
+				title: "Jorge Ortega Eulogy",
 				subHeading: "September 8, 1932 - December 22, 2022",
 				description: "The Eulogy I Wrote for Jorge Ortega",
 				dateTime: "2022-12-28",

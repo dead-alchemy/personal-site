@@ -14,7 +14,10 @@ const BlogTitle = ({
 		<Fragment>
 			<Head>
 				<title>{title}</title>
-				<meta property="og:site_name" content="David Nicholas"></meta>
+				<meta
+					property="og:site_name"
+					content={`David Nicholas: ${title}`}
+				></meta>
 				<link rel="canonical" href="https://www.dnicholas.me"></link>
 				<meta name="description" content={description} />
 				<meta property="og:title" content={title}></meta>

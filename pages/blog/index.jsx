@@ -5,6 +5,13 @@ import styles from "../../styles/blog.module.scss";
 const Home = () => {
 	const entries = [
 		{
+			display: "ADHD In the Office",
+			description:
+				"How I manage to stay productive in very different locations with ADHD",
+			date: "5/21/2023",
+			url: "adhd_in_the_office",
+		},
+		{
 			date: "3/11/2023",
 			display: "Magic: My Favorite App",
 			description: "An Essay I wrote about my favorite app Magic: Arena",

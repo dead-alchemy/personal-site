@@ -5,6 +5,12 @@ import styles from "../../styles/blog.module.scss";
 const Home = () => {
 	const entries = [
 		{
+			display: "Bad Users Toxic Users",
+			description: "",
+			date: "5/29/2023",
+			url: "bad_users_toxic_users",
+		},
+		{
 			display: "ADHD In the Office",
 			description:
 				"How I manage to stay productive in very different locations with ADHD",

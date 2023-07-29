@@ -25,7 +25,7 @@ const HicksVsFittsLaw = () => (
 			help our users make informed choices and avoid confusion when trying
 			to make any decision.
 		</p>
-		<h3 id="fitts_law">Fitt's Law</h3>
+		<h3 id="fitts_law">Fitt’s Law</h3>
 		<p>
 			Fitts’ law is defined as that the time required to rapidly move to a
 			target area is a function of the ratio between the distance to the
@@ -93,7 +93,7 @@ const HicksVsFittsLaw = () => (
 			movements, like for example slamming on a brake pedal, this could
 			potentially lead to mistakes.
 		</p>
-		<h3 id="hicks_law">Hick's Law</h3>
+		<h3 id="hicks_law">Hick’s Law</h3>
 		<p>
 			As defined by Hick, Hick’s law states that the response time in
 			simple decision tasks is a linear function of the transmitted

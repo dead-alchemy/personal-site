@@ -5,6 +5,13 @@ import styles from "../../styles/blog.module.scss";
 const Home = () => {
 	const entries = [
 		{
+			display: "How Hicks and Fitts Law Drive User Experiences",
+			description:
+				"How to build and manage user interfaces when building applications for our customers and users.",
+			date: "7/29/2023",
+			url: "hicks_vs_fitts_law",
+		},
+		{
 			display: "Bad Users Toxic Users",
 			description: "",
 			date: "5/29/2023",

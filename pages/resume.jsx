@@ -79,7 +79,7 @@ const Resume = () => {
 				<div className={styles["experience_container"]}>
 					<h3>Experience</h3>
 					<div className={styles["experience__job"]}>
-						<h4>Associate Software Developer</h4>
+						<h4>Senior Software Developer</h4>
 						<div className="italic">
 							Discover Financial Services, West Valley, July 2016
 							- Current

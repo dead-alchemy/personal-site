@@ -71,8 +71,11 @@ const Home = () => {
 		<div className={styles["article"]}>
 			<div>
 				My Most Recent Blog is{" "}
-				<Link href={`/blog/${entries[0].url}`}>
-					<a className={styles["blog_link"]}>{entries[0].display}</a>
+				<Link
+					href={`/blog/${entries[0].url}`}
+					className={styles["blog_link"]}
+				>
+					{entries[0].display}
 				</Link>
 				<br />
 				{entries[0].description}
@@ -89,10 +92,11 @@ const Home = () => {
 					{entries.map((e) => (
 						<tr key={e.display}>
 							<td>
-								<Link href={`/blog/${e.url}`}>
-									<a className={styles["blog_link"]}>
-										{e.display}
-									</a>
+								<Link
+									href={`/blog/${e.url}`}
+									className={styles["blog_link"]}
+								>
+									{e.display}
 								</Link>
 							</td>
 							<td>{e.date}</td>

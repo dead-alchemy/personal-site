@@ -29,9 +29,7 @@ const Nav = () => {
 								router.pathname == "/" ? styles["active"] : ""
 							}
 						>
-							<Link href="/">
-								<a>Home</a>
-							</Link>
+							<Link href="/">Home</Link>
 						</li>
 						<li
 							className={
@@ -40,9 +38,7 @@ const Nav = () => {
 									: ""
 							}
 						>
-							<Link href="/blog">
-								<a>Blog</a>
-							</Link>
+							<Link href="/blog">Blog</Link>
 						</li>
 						<li
 							className={
@@ -51,9 +47,7 @@ const Nav = () => {
 									: ""
 							}
 						>
-							<Link href="/aboutme">
-								<a>About Me</a>
-							</Link>
+							<Link href="/aboutme">About Me</Link>
 						</li>
 						<li
 							className={
@@ -62,9 +56,7 @@ const Nav = () => {
 									: ""
 							}
 						>
-							<Link href="/resume">
-								<a>Resume</a>
-							</Link>
+							<Link href="/resume">Resume</Link>
 						</li>
 					</ul>
 				</div>

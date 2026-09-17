@@ -1,6 +1,9 @@
-import {Fragment} from "react";
 import Head from "next/head";
-import styles from "./BlogTitle.module.scss";
+import Link from "next/link";
+
+import {Badge} from "@/components/ui/badge";
+import {ArrowLeftIcon} from "@/components/icons";
+import {blogEntries} from "@/pages/blog";
 
 const BlogTitle = ({
 	title,
@@ -10,8 +13,10 @@ const BlogTitle = ({
 	humanDate,
 	url,
 }) => {
+	const entry = blogEntries.find((post) => post.url === url);
+
 	return (
-		<Fragment>
+		<>
 			<Head>
 				<title>{title}</title>
 				<meta
@@ -30,18 +35,37 @@ const BlogTitle = ({
 				></meta>
 				<meta property="og:locale" content="en_US"></meta>
 				<meta name="msapplication-starturl" content="/"></meta>
-				<meta name="theme-color" content="#f2efeaff"></meta>
-				<meta name="msapplication-TileColor" content="#f2efeaff"></meta>
+				<meta name="theme-color" content="#0c457d"></meta>
+				<meta name="msapplication-TileColor" content="#0c457d"></meta>
 			</Head>
-			<div className={styles["blog-title"]}>
-				<h1>{title}</h1>
-				<>{subHeading ? <h2>{subHeading}</h2> : ""}</>
+
+			<Link
+				href="/blog"
+				className="mb-6 inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+			>
+				<ArrowLeftIcon className="size-4" />
+				Back to blog
+			</Link>
+
+			<div className="flex flex-col gap-4 border-b border-border pb-8">
+				{entry && <Badge tone={entry.tone}>{entry.category}</Badge>}
+				<h1 className="text-[32px] leading-tight sm:text-[40px]">
+					{title}
+				</h1>
+				{subHeading && (
+					<p className="max-w-[640px] text-lg leading-relaxed text-muted-foreground">
+						{subHeading}
+					</p>
+				)}
+				<time
+					itemProp="datePublished"
+					dateTime={dateTime}
+					className="text-sm text-muted-foreground"
+				>
+					{humanDate}
+				</time>
 			</div>
-			<time itemProp="datePublished" dateTime={dateTime}>
-				{humanDate}
-			</time>
-			<hr />
-		</Fragment>
+		</>
 	);
 };
 

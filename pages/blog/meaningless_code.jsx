@@ -1,6 +1,4 @@
-import styles from "../../styles/blog.module.scss";
-import BlogTitle from "../../components/BlogTitle";
-import {BlogTemplate} from "../../components";
+import BlogTemplate from "../../components/BlogTemplate";
 
 const MeaninglessCode = () => {
 	return (

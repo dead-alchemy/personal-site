@@ -1,5 +1,5 @@
 import Code from "../../components/Code";
-import {BlogTemplate} from "../../components";
+import BlogTemplate from "../../components/BlogTemplate";
 
 // @todo
 // https://morioh.com/p/bbbce90d65c5 for cloudflare worker for our remote images.

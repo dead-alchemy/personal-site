@@ -1,6 +1,53 @@
-import React from "react";
 import Head from "next/head";
-import styles from "../styles/Resume.module.scss";
+
+import {Badge} from "@/components/ui/badge";
+
+const tones = ["blue", "green", "gold", "red"];
+
+const skills = [
+	"Angular",
+	"React",
+	"TypeScript",
+	"JavaScript",
+	"SQL",
+	"NoSQL",
+	"Node",
+	"Jest",
+	"UI / UX",
+	"Material UI",
+	"Bootstrap",
+	"ETL Development",
+	"SAS",
+	"Tableau",
+	"Jenkins",
+	"Docker",
+	"Bash",
+	"AI-assisted development (Claude)",
+];
+
+const jobs = [
+	{
+		title: "Senior Software Developer",
+		company: "Capital One",
+		companyNote: "formerly Discover Financial Services, acquired 2025",
+		location: "West Valley, UT",
+		dates: "July 2016 – Current",
+		highlights: [
+			"Led the Discover-to-Capital One hierarchy data integration (Apr 2025 – Feb 2026); solely responsible for designing and executing the queries and ETL pipelines that migrated and fed hierarchy data to 7 downstream teams, including 4 critical reporting systems.",
+			"Built an AI-assisted shared component library (Calendar, Table, and other reusable UI components) adopted by 2 teams (26 developers combined), cutting initial component delivery time by roughly 33–50%.",
+			"Building Angular (previously React) applications to give Capital One/Discover employees access to meaningful data trends and support daily operational functions.",
+			"Converting legacy applications to modern UI and technologies.",
+		],
+	},
+	{
+		title: "Senior Sales Associate",
+		company: "Discover Financial Services",
+		location: "West Valley",
+		dates: "August 2013 – July 2016",
+		summary:
+			"Sold personal loan programs by understanding customer needs and matching them to the right solution — built a foundation in client communication and needs assessment.",
+	},
+];
 
 const Resume = () => {
 	return (
@@ -26,133 +73,116 @@ const Resume = () => {
 				></meta>
 				<meta property="og:locale" content="en_US"></meta>
 				<meta name="msapplication-starturl" content="/"></meta>
-				<meta name="theme-color" content="#f2efeaff"></meta>
-				<meta name="msapplication-TileColor" content="#f2efeaff"></meta>
+				<meta name="theme-color" content="#0c457d"></meta>
+				<meta name="msapplication-TileColor" content="#0c457d"></meta>
 			</Head>
-			<div className={styles["resume_container"]}>
-				<h2>David Nicholas</h2>
-				<div className={styles["contact_container"]}>
-					<h3>
-						<a href="tel:+18013098163">1 (801) 309-8163</a> /{" "}
-						<a href="mailto:david@dnicholas.me">
+
+			<div className="mx-auto flex w-full max-w-[720px] flex-col gap-10 bg-background px-4 py-12 sm:px-8 sm:py-16">
+				<div className="flex flex-col gap-2">
+					<h1 className="text-[32px] leading-tight sm:text-[40px]">
+						David Nicholas
+					</h1>
+					<div className="flex flex-wrap gap-x-2 gap-y-1 text-sm text-muted-foreground">
+						<a
+							href="tel:+18013098163"
+							className="transition-colors hover:text-foreground"
+						>
+							1 (801) 309-8163
+						</a>
+						<span>/</span>
+						<a
+							href="mailto:david@dnicholas.me"
+							className="transition-colors hover:text-foreground"
+						>
 							david@dnicholas.me
-						</a>{" "}
-						/ Salt Lake City, UT
-					</h3>
+						</a>
+						<span>/</span>
+						<span>Salt Lake City, UT</span>
+					</div>
 				</div>
 
-				<div className={styles["aboutme_container"]}>
-					<h3>About Me</h3>
-					<div className={styles["aboutme__details"]}>
-						<div className={styles["aboutme__mission"]}>
-							A full stack software developer working to ensure
-							people are empowered with data, stability, and
-							choice. Building React applications to translate
-							data for users so they can make meaningful choices.
+				<div className="flex flex-col gap-4">
+					<h2 className="text-xl">About Me</h2>
+					<p className="font-semibold italic text-foreground">
+						Full stack software developer building responsive,
+						user-focused applications with Angular and React,
+						backed by strong data engineering skills — including
+						designing and executing ETL pipelines that consolidate
+						data across systems.
+					</p>
+					<p className="text-muted-foreground">
+						Builds reusable UI component libraries with
+						AI-assisted development to help teams ship faster,
+						with a focus on turning complex data into clear,
+						usable interfaces.
+					</p>
+				</div>
+
+				<div className="flex flex-col gap-4 border-t border-border pt-10">
+					<h2 className="text-xl">Skills</h2>
+					<p className="text-sm text-muted-foreground">
+						Currently building with Angular; prior professional
+						experience with React.
+					</p>
+					<div className="flex flex-wrap gap-2">
+						{skills.map((skill, index) => (
+							<Badge key={skill} tone={tones[index % tones.length]}>
+								{skill}
+							</Badge>
+						))}
+					</div>
+				</div>
+
+				<div className="flex flex-col gap-8 border-t border-border pt-10">
+					<h2 className="text-xl">Experience</h2>
+					{jobs.map((job) => (
+						<div key={job.title} className="flex flex-col gap-3">
+							<div>
+								<h3 className="text-lg font-semibold">
+									{job.title}
+								</h3>
+								<div className="text-sm italic text-muted-foreground">
+									{job.company}
+									{job.companyNote && ` (${job.companyNote})`}
+									{" — "}
+									{job.location} · {job.dates}
+								</div>
+							</div>
+							{job.summary && (
+								<p className="text-sm leading-relaxed text-muted-foreground">
+									{job.summary}
+								</p>
+							)}
+							{job.highlights && (
+								<ul className="list-inside list-disc space-y-1 text-sm text-muted-foreground">
+									{job.highlights.map((highlight) => (
+										<li key={highlight}>{highlight}</li>
+									))}
+								</ul>
+							)}
 						</div>
-						<div>
-							Often working with various databases, api’s, and
-							libraries to bring to life trends that are
-							obfusciated by the weight of data.
+					))}
+				</div>
+
+				<div className="flex flex-col gap-2 border-t border-border pt-10">
+					<h2 className="text-xl">Education</h2>
+					<div>
+						<h3 className="text-lg font-semibold">
+							Bachelor of Science in Software Design and
+							Development
+						</h3>
+						<div className="text-sm text-muted-foreground">
+							Wilmington University
 						</div>
 					</div>
 				</div>
 
-				<div className={styles["skills_container"]}>
-					<h3>Skills</h3>
-					<ul className={styles["skills_ul"]}>
-						<li>React</li>
-						<li>SQL</li>
-						<li>NoSQL</li>
-						<li>Node</li>
-						<li>UI / UX</li>
-						<li>Matierial UI</li>
-						<li>Cold Fusion</li>
-						<li>Bash</li>
-						<li>SAS</li>
-						<li>Tableau</li>
-						<li>Docker</li>
-						<li>Bootstrap</li>
-					</ul>
-				</div>
-
-				<div className={styles["experience_container"]}>
-					<h3>Experience</h3>
-					<div className={styles["experience__job"]}>
-						<h4>Senior Software Developer</h4>
-						<div className="italic">
-							Discover Financial Services, West Valley, July 2016
-							- Current
-						</div>
-
-						<div>
-							<p>
-								Building new solutions with React, tools, and
-								data to help Discover and its employees have
-								access to meaningful trends and to assist in
-								their daily functions. Automating processes and
-								reports to reduce errors, speed up access to
-								data, and save time.
-							</p>
-						</div>
-						<div>
-							<ul>
-								<li>
-									Building React applications to assist users
-									in whatever project requested.
-								</li>
-								<li>
-									Building visualizations of data across
-									environments.
-								</li>
-								<li>
-									Converting legacy application to modern UI
-									and technologies.
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div className={styles["experience__job"]}>
-						<h4>Senior Sales Associate</h4>
-						<div className="italic">
-							Discover Financial Services, West Valley, August
-							2013 - July 2016
-						</div>
-
-						<div>
-							<p>
-								Working with customers to sell Personal Loans.
-								Understanding needs and goals to help facilitate
-								a program that worked best for them
-							</p>
-						</div>
-						<div>
-							<ul>
-								<li>Onboarding applicants</li>
-								<li>
-									Interviewing them to better understand needs
-								</li>
-								<li>
-									Reviewing data to ensure we could help them
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div className={styles["education_container"]}>
-					<h3>Education</h3>
-					<div className={styles["education_block"]}>
-						<h4>Bachelor of Science in Computer Science</h4>
-						<h5>Wilmington University</h5>
-					</div>
-				</div>
 				<div
 					itemProp="datePublished"
-					dateTime="2022-02-19"
-					className={styles["last_updated"]}
+					dateTime="2026-09-17"
+					className="text-right text-xs text-muted-foreground"
 				>
-					Last Updated 2/21/2024
+					Last Updated September 2026
 				</div>
 			</div>
 		</>

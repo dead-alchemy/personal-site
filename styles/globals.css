@@ -1,0 +1,165 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: var(--font-sans);
+    --font-sans: var(--font-sans);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-badge-blue-foreground: var(--badge-blue-foreground);
+    --color-badge-blue: var(--badge-blue);
+    --color-badge-green-foreground: var(--badge-green-foreground);
+    --color-badge-green: var(--badge-green);
+    --color-badge-gold-foreground: var(--badge-gold-foreground);
+    --color-badge-gold: var(--badge-gold);
+    --color-badge-red-foreground: var(--badge-red-foreground);
+    --color-badge-red: var(--badge-red);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: hsl(210 40% 98%);
+  --foreground: hsl(210 91% 17%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(210 91% 17%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(210 91% 17%);
+  --primary: hsl(210 82% 27%);
+  --primary-foreground: hsl(210 40% 98%);
+  --secondary: hsl(210 40% 94%);
+  --secondary-foreground: hsl(210 82% 27%);
+  --muted: hsl(210 40% 94%);
+  --muted-foreground: hsl(210 20% 45%);
+  --accent: hsl(35 78% 41%);
+  --accent-foreground: hsl(32 94% 13%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --badge-blue: hsl(210 40% 94%);
+  --badge-blue-foreground: hsl(210 91% 17%);
+  --badge-green: hsl(160 55% 94%);
+  --badge-green-foreground: hsl(160 55% 16%);
+  --badge-gold: hsl(35 80% 95%);
+  --badge-gold-foreground: hsl(32 94% 13%);
+  --badge-red: hsl(0 90% 96%);
+  --badge-red-foreground: hsl(0 62% 25%);
+  --border: hsl(210 30% 88%);
+  --input: hsl(210 30% 88%);
+  --ring: hsl(210 82% 27%);
+  --chart-1: hsl(210 82% 27%);
+  --chart-2: hsl(35 78% 41%);
+  --chart-3: hsl(160 45% 45%);
+  --chart-4: hsl(0 70% 50%);
+  --chart-5: hsl(210 55% 65%);
+  --radius: 0.5rem;
+  --sidebar: hsl(210 40% 96%);
+  --sidebar-foreground: hsl(210 91% 17%);
+  --sidebar-primary: hsl(210 82% 27%);
+  --sidebar-primary-foreground: hsl(210 40% 98%);
+  --sidebar-accent: hsl(35 78% 41%);
+  --sidebar-accent-foreground: hsl(32 94% 13%);
+  --sidebar-border: hsl(210 30% 88%);
+  --sidebar-ring: hsl(210 82% 27%);
+}
+
+.dark {
+  --background: hsl(210 91% 10%);
+  --foreground: hsl(210 40% 96%);
+  --card: hsl(210 80% 13%);
+  --card-foreground: hsl(210 40% 96%);
+  --popover: hsl(210 80% 13%);
+  --popover-foreground: hsl(210 40% 96%);
+  --primary: hsl(210 75% 60%);
+  --primary-foreground: hsl(210 91% 10%);
+  --secondary: hsl(210 50% 20%);
+  --secondary-foreground: hsl(210 40% 96%);
+  --muted: hsl(210 50% 20%);
+  --muted-foreground: hsl(210 20% 65%);
+  --accent: hsl(37 93% 72%);
+  --accent-foreground: hsl(32 94% 13%);
+  --destructive: hsl(0 62% 45%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(210 50% 22%);
+  --input: hsl(210 50% 22%);
+  --ring: hsl(210 75% 60%);
+  --chart-1: hsl(210 75% 60%);
+  --chart-2: hsl(37 93% 72%);
+  --chart-3: hsl(160 45% 55%);
+  --chart-4: hsl(0 65% 60%);
+  --chart-5: hsl(210 60% 75%);
+  --sidebar: hsl(210 85% 12%);
+  --sidebar-foreground: hsl(210 40% 96%);
+  --sidebar-primary: hsl(210 75% 60%);
+  --sidebar-primary-foreground: hsl(210 91% 10%);
+  --sidebar-accent: hsl(37 93% 72%);
+  --sidebar-accent-foreground: hsl(32 94% 13%);
+  --sidebar-border: hsl(210 50% 22%);
+  --sidebar-ring: hsl(210 75% 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+.prose {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-lead: var(--muted-foreground);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-counters: var(--muted-foreground);
+  --tw-prose-bullets: var(--muted-foreground);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--foreground);
+  --tw-prose-quote-borders: var(--border);
+  --tw-prose-captions: var(--muted-foreground);
+  --tw-prose-code: var(--foreground);
+  --tw-prose-td-borders: var(--border);
+  --tw-prose-th-borders: var(--border);
+}

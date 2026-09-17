@@ -1,31 +1,33 @@
 /* SCSS HEX */
+/* Mirrors the navy/gold tokens in styles/globals.css so the legacy SCSS
+   pages and the Tailwind/shadcn side share one palette. */
 
-$color-0-0: #fefeff;
-$color-0-1: #fbfbff;
-$color-0-2: #f8f7ff;
-$color-0-3: #ecebf2;
-$color-0-4: #7c7c80;
+$color-0-0: #fbfcfe;
+$color-0-1: #f4f7fa;
+$color-0-2: #eef2f7;
+$color-0-3: #e0e8f0;
+$color-0-4: #3d5266;
 
-$color-1-0: #fde9ed;
-$color-1-1: #f5879e;
-$color-1-2: #ed254e;
-$color-1-3: #e1234a;
-$color-1-4: #771327;
+$color-1-0: #feecec;
+$color-1-1: #f8aaaa;
+$color-1-2: #ce1212;
+$color-1-3: #a51212;
+$color-1-4: #5f1111;
 
-$color-2-0: #effbf4;
-$color-2-1: #a8e7c4;
-$color-2-2: #60d394;
-$color-2-3: #5bc88d;
-$color-2-4: #306a4a;
+$color-2-0: #e7f8f3;
+$color-2-1: #a3dcc9;
+$color-2-2: #2e7a61;
+$color-2-3: #226750;
+$color-2-4: #123f30;
 
-$color-3-0: #e6f6fd;
-$color-3-1: #73cef5;
-$color-3-2: #00a6ed;
-$color-3-3: #009ee1;
-$color-3-4: #005377;
+$color-3-0: #eaf0f6;
+$color-3-1: #88b2dd;
+$color-3-2: #0c457d;
+$color-3-3: #083868;
+$color-3-4: #042b53;
 
-$color-4-0: #fefcef;
-$color-4-1: #fceca5;
-$color-4-2: #f9dc5c;
-$color-4-3: #edd157;
-$color-4-4: #7d6e2e;
+$color-4-0: #fcf4e8;
+$color-4-1: #fadba8;
+$color-4-2: #fac775;
+$color-4-3: #ba7617;
+$color-4-4: #402302;

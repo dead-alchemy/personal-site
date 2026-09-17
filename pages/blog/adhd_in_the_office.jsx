@@ -1,4 +1,4 @@
-import {BlogTemplate} from "../../components";
+import BlogTemplate from "../../components/BlogTemplate";
 
 const ADHDInTheOffice = () => {
 	return (

@@ -1,107 +1,145 @@
-import Link from "next/link";
+import Head from "next/head";
 
-import styles from "../../styles/blog.module.scss";
+import PostCard from "@/components/PostCard";
 
-const Home = () => {
-	const entries = [
-		{
-			display: "How Hicks and Fitts Law Drive User Experiences",
-			description:
-				"How to build and manage user interfaces when building applications for our customers and users.",
-			date: "7/29/2023",
-			url: "hicks_vs_fitts_law",
-		},
-		{
-			display: "Bad Users Toxic Users",
-			description: "",
-			date: "5/29/2023",
-			url: "bad_users_toxic_users",
-		},
-		{
-			display: "ADHD In the Office",
-			description:
-				"How I manage to stay productive in very different locations with ADHD",
-			date: "5/21/2023",
-			url: "adhd_in_the_office",
-		},
-		{
-			date: "3/11/2023",
-			display: "Magic: My Favorite App",
-			description: "An Essay I wrote about my favorite app Magic: Arena",
-			url: "magic_my_favorite_app",
-		},
-		{
-			date: "1/31/2023",
-			display: "How to Build a Twitter Bot",
-			description:
-				"This is how to build a twitter bot using Node.JS and Netlify.",
-			url: "build_twitter_bot",
-		},
-		{
-			date: "12/28/2022",
-			display: "Jorge Ortega's Eulogy",
-			url: "jorge_ortega_eulogy",
-		},
-		{
-			date: "10/24/2021",
-			display: "NieR: Automata Part 3",
-			url: "or_not_to_be",
-		},
-		{
-			date: "8/7/2021",
-			display: "NieR: Automata Part 2",
-			url: "meaningless_code",
-		},
-		{
-			date: "8/1/2021",
-			display: "NieR: Automata Part 1",
-			url: "flowers_for_machines",
-		},
-		{
-			date: "4/2/2021",
-			display: "Outriders Early Impressions",
-			url: "outriders_impressions",
-		},
-		{date: "3/31/2021", display: "Meet My Pets", url: "hello_pets"},
-		//{date: "chil[D]hood&apos;s end", display: "NieR: Automata Part 4"},
-		//{date: "the [E]nd of yorha", display: "NieR: Automata Part 5"},
-	];
+export const blogEntries = [
+	{
+		url: "hicks_vs_fitts_law",
+		title: "How Hicks and Fitts Law Drive User Experiences",
+		description:
+			"How to build and manage user interfaces when building applications for our customers and users.",
+		date: "7/29/2023",
+		category: "UX",
+		tone: "blue",
+	},
+	{
+		url: "bad_users_toxic_users",
+		title: "Bad Users Toxic Users",
+		description: "Keys to help us navigate hard users.",
+		date: "5/29/2023",
+		category: "Culture",
+		tone: "red",
+	},
+	{
+		url: "adhd_in_the_office",
+		title: "ADHD In the Office",
+		description:
+			"How I manage to stay productive in very different locations with ADHD.",
+		date: "5/21/2023",
+		category: "Life",
+		tone: "gold",
+	},
+	{
+		url: "magic_my_favorite_app",
+		title: "Magic: My Favorite App",
+		description: "An Essay I wrote about my favorite app Magic: Arena.",
+		date: "3/11/2023",
+		category: "Gaming",
+		tone: "green",
+	},
+	{
+		url: "build_twitter_bot",
+		title: "How to Build a Twitter Bot",
+		description: "How to build a Twitter bot using Node.js and Netlify.",
+		date: "1/31/2023",
+		category: "Tutorial",
+		tone: "blue",
+	},
+	{
+		url: "jorge_ortega_eulogy",
+		title: "Jorge Ortega's Eulogy",
+		description: "The eulogy I wrote for Jorge Ortega.",
+		date: "12/28/2022",
+		category: "Life",
+		tone: "gold",
+	},
+	{
+		url: "or_not_to_be",
+		title: "NieR: Automata Part 3",
+		description: "How can I forget NieR: Automata — Part 3.",
+		date: "10/24/2021",
+		category: "Reviews",
+		tone: "green",
+	},
+	{
+		url: "meaningless_code",
+		title: "NieR: Automata Part 2",
+		description: "How can I forget NieR: Automata — Part 2.",
+		date: "8/7/2021",
+		category: "Reviews",
+		tone: "green",
+	},
+	{
+		url: "flowers_for_machines",
+		title: "NieR: Automata Part 1",
+		description: "My play through of NieR: Automata.",
+		date: "8/1/2021",
+		category: "Reviews",
+		tone: "green",
+	},
+	{
+		url: "outriders_impressions",
+		title: "Outriders Early Impressions",
+		description: "My early impressions of Outriders.",
+		date: "4/2/2021",
+		category: "Reviews",
+		tone: "green",
+	},
+	{
+		url: "hello_pets",
+		title: "Meet My Pets",
+		description: "All my pets!",
+		date: "3/31/2021",
+		category: "Life",
+		tone: "gold",
+	},
+];
 
+const Blog = () => {
 	return (
-		<div className={styles["article"]}>
-			<div>
-				My Most Recent Blog is{" "}
-				<Link href={`/blog/${entries[0].url}`}>
-					<a className={styles["blog_link"]}>{entries[0].display}</a>
-				</Link>
-				<br />
-				{entries[0].description}
-			</div>
+		<>
+			<Head>
+				<title>Blog | David Nicholas</title>
+				<meta
+					name="description"
+					content="Thoughts on code, UX, and whatever else is on my mind — plus the occasional game review."
+				/>
+				<meta property="og:title" content="Blog | David Nicholas"></meta>
+				<meta property="og:type" content="website"></meta>
+				<meta
+					property="og:url"
+					content="https://www.dnicholas.me/blog"
+				></meta>
+				<meta property="og:site_name" content="David Nicholas"></meta>
+				<meta property="og:locale" content="en_US"></meta>
+				<link
+					rel="canonical"
+					href="https://www.dnicholas.me/blog"
+				></link>
+				<meta name="msapplication-starturl" content="/"></meta>
+				<meta name="theme-color" content="#0c457d"></meta>
+				<meta name="msapplication-TileColor" content="#0c457d"></meta>
+			</Head>
 
-			<table className={styles["blog_table"]}>
-				<thead>
-					<tr>
-						<td>Blog Name</td>
-						<td>Date Published</td>
-					</tr>
-				</thead>
-				<tbody>
-					{entries.map((e) => (
-						<tr key={e.display}>
-							<td>
-								<Link href={`/blog/${e.url}`}>
-									<a className={styles["blog_link"]}>
-										{e.display}
-									</a>
-								</Link>
-							</td>
-							<td>{e.date}</td>
-						</tr>
-					))}
-				</tbody>
-			</table>
-		</div>
+			<div className="w-full bg-background">
+				<div className="mx-auto max-w-[1120px] px-4 py-12 sm:px-8 sm:py-16">
+					<div className="flex flex-col gap-3 pb-10">
+						<h1 className="text-[32px] sm:text-[40px]">Blog</h1>
+						<p className="max-w-[560px] text-base leading-relaxed text-muted-foreground">
+							Thoughts on code, UX, and whatever else is on my
+							mind — plus the occasional game review.
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+						{blogEntries.map((entry) => (
+							<PostCard key={entry.url} {...entry} />
+						))}
+					</div>
+				</div>
+			</div>
+		</>
 	);
 };
 
-export default Home;
+export default Blog;

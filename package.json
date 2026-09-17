@@ -1,6 +1,7 @@
 {
   "name": "my-website-next",
   "private": false,
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

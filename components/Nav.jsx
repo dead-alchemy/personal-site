@@ -22,7 +22,7 @@ const Nav = () => {
 	const router = useRouter();
 
 	return (
-		<header className="w-full border-b border-border">
+		<header className="w-full border-b border-border bg-background">
 			<div className="mx-auto flex h-[72px] max-w-[1120px] items-center justify-between gap-6 px-4 sm:px-8">
 				<Link href="/" className="flex shrink-0 items-center gap-2.5">
 					<span className="size-2.5 rounded-full bg-accent" />

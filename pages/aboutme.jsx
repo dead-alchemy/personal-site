@@ -47,7 +47,7 @@ const AboutMe = () => {
 				<meta name="msapplication-TileColor" content="#0c457d"></meta>
 			</Head>
 
-			<div className="mx-auto flex max-w-[720px] flex-col gap-10 px-4 py-12 sm:px-8 sm:py-16">
+			<div className="mx-auto flex w-full max-w-[720px] flex-col gap-10 bg-background px-4 py-12 sm:px-8 sm:py-16">
 				<div className="flex flex-col gap-4">
 					<h1 className="text-[32px] leading-tight sm:text-[40px]">
 						About Me

@@ -52,7 +52,7 @@ const AboutMe = () => {
         <div className="flex flex-col gap-4">
           <h1 className="text-[32px] leading-tight sm:text-[40px]">About Me</h1>
           <p className="text-lg leading-relaxed text-muted-foreground">
-            I'm a full stack developer out of Salt Lake City building
+            I&apos;m a full stack developer out of Salt Lake City building
             responsive, user-focused applications with Angular and React —
             backed by strong data engineering and ETL pipeline experience. I
             write about code, UX, and whatever else is on my mind, plus the

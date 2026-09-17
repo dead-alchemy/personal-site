@@ -1,11 +1,12 @@
 import BlogTitle from "./BlogTitle";
-import styles from "../styles/blog.module.scss";
 
-const BlogTemplate = (props) => {
+const BlogTemplate = ({title, children}) => {
 	return (
-		<article className={styles["article"]}>
-			{props.title && <BlogTitle {...props.title} />}
-			{props.children}
+		<article className="mx-auto max-w-[720px] px-4 py-12 sm:px-8 sm:py-16">
+			{title && <BlogTitle {...title} />}
+			<div className="prose prose-neutral mt-8 max-w-none">
+				{children}
+			</div>
 		</article>
 	);
 };

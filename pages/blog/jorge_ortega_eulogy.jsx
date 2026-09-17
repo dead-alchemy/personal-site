@@ -1,7 +1,3 @@
-import Link from "next/link";
-
-import styles from "../../styles/blog.module.scss";
-import BlogTitle from "../../components/BlogTitle";
 import BlogTemplate from "../../components/BlogTemplate";
 
 const JorgeOrtegaEulogy = () => {
@@ -86,7 +82,6 @@ const JorgeOrtegaEulogy = () => {
 			<p>
 				Here is the{" "}
 				<a
-					className={styles["link"]}
 					href="https://www.legacy.com/us/obituaries/saltlaketribune/name/george-ortega-obituary?id=38489495"
 					target="_blank"
 					rel="noreferrer"

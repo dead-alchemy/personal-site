@@ -2,64 +2,20 @@ import Head from "next/head";
 import Link from "next/link";
 
 import {Button} from "@/components/ui/button";
+import {Badge} from "@/components/ui/badge";
+import PostCard from "@/components/PostCard";
 import {ArrowRightIcon} from "@/components/icons";
 import {socialLinks} from "@/lib/social-links";
-import {cn} from "@/lib/utils";
+import {blogEntries} from "@/pages/blog";
 
 const skills = [
-	{label: "React", tone: "red"},
-	{label: "SQL", tone: "blue"},
-	{label: "Tableau", tone: "gold"},
-	{label: "Node", tone: "green"},
+	{label: "Angular", tone: "red"},
+	{label: "TypeScript", tone: "blue"},
+	{label: "ETL Development", tone: "gold"},
+	{label: "SQL", tone: "green"},
 ];
 
-const latestPosts = [
-	{
-		category: "UX",
-		tone: "blue",
-		title: "How Hicks and Fitts Law Drive User Experiences",
-		description:
-			"How to build and manage user interfaces when building applications for our customers and users.",
-		date: "July 29, 2023",
-		url: "hicks_vs_fitts_law",
-	},
-	{
-		category: "Culture",
-		tone: "red",
-		title: "Bad Users Toxic Users",
-		description:
-			"How to manage relationships and set expectations with our hardest users.",
-		date: "May 29, 2023",
-		url: "bad_users_toxic_users",
-	},
-	{
-		category: "Life",
-		tone: "gold",
-		title: "ADHD In the Office",
-		description:
-			"How I manage to stay productive in very different locations with ADHD.",
-		date: "May 21, 2023",
-		url: "adhd_in_the_office",
-	},
-];
-
-const badgeTone = {
-	blue: "bg-badge-blue text-badge-blue-foreground",
-	green: "bg-badge-green text-badge-green-foreground",
-	gold: "bg-badge-gold text-badge-gold-foreground",
-	red: "bg-badge-red text-badge-red-foreground",
-};
-
-const Badge = ({tone, children}) => (
-	<span
-		className={cn(
-			"inline-flex h-6 items-center whitespace-nowrap rounded-full px-2.5 text-xs font-bold",
-			badgeTone[tone]
-		)}
-	>
-		{children}
-	</span>
-);
+const latestPosts = blogEntries.slice(0, 3);
 
 export default function Home() {
 	return (
@@ -94,11 +50,13 @@ export default function Home() {
 							David Nicholas
 						</h1>
 						<p className="max-w-[560px] text-lg leading-relaxed text-muted-foreground">
-							I&apos;m a full stack web developer out of Salt Lake
-							City who specializes in React, APIs, and Tableau —
-							plus whatever other full stack problems come my way.
-							I write about code, UX, and whatever else is on my
-							mind, plus the occasional game review.
+							I&apos;m a full stack developer out of Salt Lake
+							City building responsive, user-focused
+							applications with Angular and React — backed by
+							strong data engineering and ETL pipeline
+							experience. I write about code, UX, and whatever
+							else is on my mind, plus the occasional game
+							review.
 						</p>
 						<div className="flex flex-wrap gap-3 pt-2">
 							<Button asChild size="lg">
@@ -135,28 +93,7 @@ export default function Home() {
 
 						<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 							{latestPosts.map((post) => (
-								<Link
-									key={post.url}
-									href={`/blog/${post.url}`}
-									className="group flex flex-col gap-3.5 rounded-[14px] border border-border bg-card p-6 transition-colors hover:border-muted-foreground/40"
-								>
-									<Badge tone={post.tone}>{post.category}</Badge>
-									<h3 className="text-lg leading-snug">
-										{post.title}
-									</h3>
-									<p className="flex-1 text-sm leading-relaxed text-muted-foreground">
-										{post.description}
-									</p>
-									<div className="flex items-center justify-between border-t border-border pt-3">
-										<span className="text-[13px] text-muted-foreground">
-											{post.date}
-										</span>
-										<span className="flex items-center gap-1 text-[13px] font-bold text-primary">
-											Read post
-											<ArrowRightIcon className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-										</span>
-									</div>
-								</Link>
+								<PostCard key={post.url} {...post} />
 							))}
 						</div>
 					</div>

@@ -21,12 +21,19 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>David Nicholas</title>
+				<title>David Nicholas — Full Stack Software Developer</title>
 				<meta
 					name="description"
-					content="The personal website of David Nicholas"
+					content="David Nicholas is a full stack software developer in Salt Lake City, UT building responsive applications with Angular and React, backed by strong data engineering and ETL pipeline experience. Read his blog on code, UX, and more."
 				/>
-				<meta property="og:title" content="David Nicholas"></meta>
+				<meta
+					property="og:title"
+					content="David Nicholas — Full Stack Software Developer"
+				></meta>
+				<meta
+					property="og:description"
+					content="Full stack software developer in Salt Lake City, UT building responsive applications with Angular and React, backed by strong data engineering and ETL pipeline experience."
+				></meta>
 				<meta property="og:type" content="website"></meta>
 				<meta
 					property="og:url"
@@ -34,10 +41,59 @@ export default function Home() {
 				></meta>
 				<meta property="og:site_name" content="David Nicholas"></meta>
 				<meta property="og:locale" content="en_US"></meta>
+				<meta
+					property="og:image"
+					content="https://www.dnicholas.me/pictures/home/me.jpg"
+				></meta>
+				<meta property="og:image:width" content="1233"></meta>
+				<meta property="og:image:height" content="925"></meta>
+				<meta
+					property="og:image:alt"
+					content="David Nicholas"
+				></meta>
+				<meta name="twitter:card" content="summary_large_image"></meta>
+				<meta name="twitter:site" content="@dlonicholas"></meta>
+				<meta name="twitter:creator" content="@dlonicholas"></meta>
+				<meta
+					name="twitter:title"
+					content="David Nicholas — Full Stack Software Developer"
+				></meta>
+				<meta
+					name="twitter:description"
+					content="Full stack software developer in Salt Lake City, UT building responsive applications with Angular and React, backed by strong data engineering and ETL pipeline experience."
+				></meta>
+				<meta
+					name="twitter:image"
+					content="https://www.dnicholas.me/pictures/home/me.jpg"
+				></meta>
 				<link rel="canonical" href="https://www.dnicholas.me"></link>
 				<meta name="msapplication-starturl" content="/"></meta>
 				<meta name="theme-color" content="#0c457d"></meta>
 				<meta name="msapplication-TileColor" content="#0c457d"></meta>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify({
+							"@context": "https://schema.org",
+							"@type": "Person",
+							name: "David Nicholas",
+							url: "https://www.dnicholas.me",
+							image: "https://www.dnicholas.me/pictures/home/me.jpg",
+							jobTitle: "Senior Software Developer",
+							worksFor: {
+								"@type": "Organization",
+								name: "Capital One",
+							},
+							address: {
+								"@type": "PostalAddress",
+								addressLocality: "Salt Lake City",
+								addressRegion: "UT",
+								addressCountry: "US",
+							},
+							sameAs: socialLinks.map(({href}) => href),
+						}),
+					}}
+				/>
 			</Head>
 
 			<div className="flex min-h-[calc(100vh-72px)] w-full flex-col bg-background">

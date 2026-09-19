@@ -4,6 +4,15 @@ import PostCard from "@/components/PostCard";
 
 export const blogEntries = [
 	{
+		url: "my_experience_with_fedora",
+		title: "Something New, Something Old: Why I Finally Left Windows for Linux",
+		description:
+			"Why I finally left Windows for Fedora Linux, and how I got everything installed and running.",
+		date: "9/18/2026",
+		category: "Tech",
+		tone: "blue",
+	},
+	{
 		url: "robert_nicholas_eulogy",
 		title: "Robert Nicholas's Eulogy",
 		description: "The eulogy I wrote for my father, Robert Nicholas.",

@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://www.dnicholas.me/</loc>
-		<lastmod>2026-09-17</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.dnicholas.me/blog</loc>
-		<lastmod>2026-09-17</lastmod>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.dnicholas.me/aboutme</loc>
@@ -15,6 +15,10 @@
 	<url>
 		<loc>https://www.dnicholas.me/resume</loc>
 		<lastmod>2026-09-17</lastmod>
+	</url>
+	<url>
+		<loc>https://www.dnicholas.me/blog/my_experience_with_fedora</loc>
+		<lastmod>2026-09-18</lastmod>
 	</url>
 	<url>
 		<loc>https://www.dnicholas.me/blog/robert_nicholas_eulogy</loc>

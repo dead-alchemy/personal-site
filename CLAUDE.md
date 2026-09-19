@@ -6,6 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is David Nicholas's personal website (dnicholas.me): a Next.js 16 (React 19, pages router) site with a homepage, an "About Me" page, a resume page, and a hand-written blog where each post is its own `.jsx` page rather than markdown content. Styling is transitioning to Tailwind CSS v4 + shadcn/ui (`components/ui/`, `components.json`, `lib/utils.js`); the legacy SCSS Modules setup (`styles/*.module.scss`, `styles/globals.scss`) still styles the existing pages and will be migrated page-by-page during the visual redesign.
 
+## Behavior Guidelines
+
+- Keep responses brief, short, and direct.
+- Avoid unnecessary preamble, filler words, or long explanations unless specifically asked.
+
 ## Commands
 
 - `yarn dev` — start the local dev server

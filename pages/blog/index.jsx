@@ -4,6 +4,22 @@ import PostCard from "@/components/PostCard";
 
 export const blogEntries = [
 	{
+		url: "robert_nicholas_eulogy",
+		title: "Robert Nicholas's Eulogy",
+		description: "The eulogy I wrote for my father, Robert Nicholas.",
+		date: "8/16/2026",
+		category: "Life",
+		tone: "gold",
+	},
+	{
+		url: "raquel_ortega_eulogy",
+		title: "Raquel Ortega's Eulogy",
+		description: "The eulogy I wrote for my grandmother, Raquel Ortega.",
+		date: "8/29/2024",
+		category: "Life",
+		tone: "gold",
+	},
+	{
 		url: "hicks_vs_fitts_law",
 		title: "How Hicks and Fitts Law Drive User Experiences",
 		description:

@@ -4,6 +4,15 @@ import PostCard from "@/components/PostCard";
 
 export const blogEntries = [
   {
+    url: "rebuilding_dnicholas_me",
+    title: "Rebuilding dnicholas.me: React, Markdown, and an AI Pair Programmer",
+    description:
+      "How I rebuilt my personal site from scratch with React, shadcn, and Cloudflare Pages — with Claude as my pair programmer the whole way through.",
+    date: "9/20/2026",
+    category: "Tech",
+    tone: "blue",
+  },
+  {
     url: "my_experience_with_fedora",
     title: "Something New, Something Old: Why I Finally Left Windows for Linux",
     description:
